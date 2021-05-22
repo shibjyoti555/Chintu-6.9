@@ -1,2 +1,1 @@
-open index.html
-'cuz i'm noob at joking
+hosting link -> https://github.com/shibjyoti555/Chintu-6.9
