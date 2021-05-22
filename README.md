@@ -1,1 +1,1 @@
-hosting link -> https://github.com/shibjyoti555/Chintu-6.9
+hosting link -> https://shibjyoti555.github.io/Chintu-6.9/
