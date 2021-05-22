@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Its a Noob. HaHa</title>
+
+    <style>
+        button{
+            border-radius: 40px;
+            border: 2px solid yellowgreen;
+            background-color: aqua;
+            font-size: larger;
+        }
+
+        body{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body><center>
+    <h1>First of all, don't expect this page to be as coll as the index.</h1>
+    <h2>I just copied it from a tutorial. LOL</h2>
+    
+    <br><br>
+
+    <button onclick="showname()" id="name_btn">Click here to know my ₗₐₘₑ ⁿᵃᵐᵉ</button>
+    <p id="name_space"></p>
+
+    <a href="#" id="lnk"><button id="forth" onclick="forth()">Click here to know further about me</button></a>
+
+    <p color="red" id="warn"></p>
+</body>
+</html>
+
+<script>
+    var nnum = 0;
+    var nbtn = document.getElementById("name_btn");
+    var nspc = document.getElementById("name_space");
+    var wrn = document.getElementById("warn");
+    var lnk = document.getElementById("lnk");
+
+    function showname(){
+        nnum++;
+
+        if(nnum == 1){
+            nbtn.innerHTML = "Wait. Did you clicked? Sorry I missed it. Please click again.";
+        }
+        if(nnum == 2){
+            nbtn.innerHTML = "Oops! I missed it again. Please Once more.";
+        }
+        if(nnum == 3){
+            nbtn.innerHTML = "This page is made by a noob named...";
+        }
+        if(nnum == 4){
+            nbtn.remove();
+            nspc.innerHTML = "<i><h2>S̵̙͕̀̃ḣ̖̻͛̓ỉ͔͖̜͌b̬͖̏́͢j̪̟̮̔ͩy҉̃̀̋̑o̯̱̊͊͢t̲̂̓ͩ̑ỉ͔͖̜͌ D̶͔̭̪̻ā̤̓̍͘s̠҉͍͊ͅ</h2></i>"
+        }
+        if(nnum > 4){
+            nbtn.innerHTML = "Fcuk u. I said 'ReFreSh'"
+        }
+    }
+
+    function forth(){
+        if(nnum != 4){
+            wrn.innerHTML = "STUPID NOOB!<br>HoW dArE YoU sKiP mY nAmE!!!<br>Now refresh this page"
+            nnum = 5;
+        }
+        else{
+            lnk.setAttribute("href", "task3-2.html")
+        }
+    }
+</script>
